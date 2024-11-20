@@ -1,0 +1,95 @@
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-image: url('https://www.chromethemer.com/wallpapers/chromebook-wallpapers/images/960/water-pokemon-chromebook-wallpaper.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 100vh;
+    color: #fff;
+}
+
+.container {
+    background: rgba(0, 0, 0, 0.7);
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+h1 {
+    margin-bottom: 20px;
+    font-size: 2em;
+    text-shadow: 2px 2px #000;
+}
+
+#generate-btn {
+    padding: 10px 20px;
+    font-size: 1em;
+    background-color: #ff1c1c;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#generate-btn:hover {
+    background-color: #e60000;
+}
+
+#cards-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.card {
+    background: #fff;
+    color: #000;
+    width: 250px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+}
+
+.card-content {
+    padding: 15px;
+}
+
+.card-title {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+.card-type {
+    font-size: 1em;
+    margin-bottom: 10px;
+}
+
+.card-attack {
+    font-size: 0.9em;
+    margin-bottom: 10px;
+}
+
+.card-description {
+    font-size: 0.9em;
+}
